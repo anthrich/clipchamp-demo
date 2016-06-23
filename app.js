@@ -11,9 +11,12 @@ if(clipchampEle) {
 		resolution: "480p",
 		compression: "medium",
 		inputs: ["camera"],
-		output: "dummy",
+		output: "azure",
 		camera: {
 			limit: 300,
+		},
+		azure: {
+			container: "clipchamp"
 		}
 	});
 }
