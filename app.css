@@ -1,6 +1,8 @@
 html {
 	font-family: 'Roboto', sans-serif;
 	background-color: #F3FAB6;
+	animation: bg-color 10s;
+	animation-iteration-count: infinite;
 }
 
 body {
@@ -10,4 +12,15 @@ body {
 	margin-bottom: 20px;
 	background: rgba(255, 255, 255, 0.3);
 	padding: 20px;
+	border-radius: 5px;
+}
+
+@keyframes bg-color {
+	0% { background-color: #F3FAB6 }
+	50% { background-color: #CBE32D }
+	100% { background-color: #F3FAB6 }
+}
+
+.publisher-logo {
+	width: 100px;
 }
